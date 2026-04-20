@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- PRIMARY SEO -->
+    <title>Best Perfumes in Pakistan | Long Lasting Impression Scents | Scents of Arabia</title>
+    <meta name="description" content="Shop the best perfumes in Pakistan. High-quality impression perfumes Pakistan for men & women. Long lasting, budget-friendly scents inspired by designer brands.">
+    <meta name="keywords" content="best perfumes in Pakistan, long lasting perfumes for men, long lasting perfumes for women, impression perfumes Pakistan, inspired fragrances">
+    
+    <!-- OPEN GRAPH / SOCIAL SHARING -->
+    <meta property="og:title" content="Scents of Arabia - Luxury Impression Perfumes Pakistan">
+    <meta property="og:description" content="Premium long-lasting fragrances inspired by world-class designers, priced for Pakistan.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://scentsofarabia.pk">
+    
+    <!-- TAILWIND CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap');
+        
+        :root {
+            --gold: #C5A059;
+            --dark: #121212;
+        }
+        body { font-family: 'Inter', sans-serif; background: #fafafa; color: var(--dark); overflow-x: hidden; }
+        h1, h2, h3, .brand-font { font-family: 'Playfair Display', serif; }
+        
+        .nav-glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .product-card:hover img { transform: scale(1.05); }
+        .transition-soft { transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); }
+        .btn-gold { background: var(--gold); color: white; transition: 0.3s; }
+        .btn-gold:hover { background: #b08d4a; transform: translateY(-2px); }
+        .active-link { color: var(--gold) !important; font-weight: 600; }
+        
+        /* Hide scrollbar for clean look */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #C5A059; }
+
+        /* Animation for images */
+        .fade-in { animation: fadeIn 1.5s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+
+    <!-- SCHEMA MARKUP -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Scents of Arabia",
+      "url": "https://scentsofarabia.pk",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://scentsofarabia.pk/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="nav-glass fixed w-full top-0 z-50 py-4 px-6 md:px-12 flex justify-between items-center">
+        <a href="#" onclick="route('home')" class="text-2xl brand-font font-bold tracking-widest text-black">SCENTS OF ARABIA</a>
+        
+        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-wider font-medium">
+            <a href="#" onclick="route('home')" id="nav-home" class="hover:text-amber-600 transition">Home</a>
+            <a href="#" onclick="route('shop')" id="nav-shop" class="hover:text-amber-600 transition">Shop</a>
+            <a href="#" onclick="route('about')" id="nav-about" class="hover:text-amber-600 transition">Our Story</a>
+            <a href="#" onclick="route('faq')" id="nav-faq" class="hover:text-amber-600 transition">FAQs</a>
+            <a href="#" onclick="route('contact')" id="nav-contact" class="hover:text-amber-600 transition">Contact</a>
+        </div>
+
+        <div class="flex items-center space-x-4 text-xl">
+            <i class="fa-solid fa-magnifying-glass cursor-pointer hover:text-amber-600"></i>
+            <div class="relative cursor-pointer hover:text-amber-600" onclick="route('shop')">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="absolute -top-2 -right-2 bg-amber-600 text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center">0</span>
+            </div>
+            <button class="md:hidden" onclick="toggleMobileMenu()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT AREA -->
+    <main id="app-root" class="pt-20"></main>
+
+    <!-- FOOTER -->
+    <footer class="bg-stone-900 text-white pt-16 pb-8 px-6 md:px-12 mt-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10 border-b border-stone-800 pb-12">
+            <div class="col-span-1 md:col-span-1">
+                <h3 class="text-2xl brand-font mb-4 text-amber-500">Scents of Arabia</h3>
+                <p class="text-stone-400 text-sm leading-relaxed">Defining the standard for high-quality, long lasting perfumes for men and women in Pakistan since 2021.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4 uppercase text-xs tracking-widest text-amber-500">Quick Links</h4>
+                <ul class="text-stone-400 text-sm space-y-2">
+                    <li><a href="#" onclick="route('shop')" class="hover:text-white">All Fragrances</a></li>
+                    <li><a href="#" onclick="route('about')" class="hover:text-white">Our Heritage</a></li>
+                    <li><a href="#" onclick="route('faq')" class="hover:text-white">Shipping Policy</a></li>
+                    <li><a href="#" onclick="route('contact')" class="hover:text-white">Store Locator</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4 uppercase text-xs tracking-widest text-amber-500">Help & Info</h4>
+                <ul class="text-stone-400 text-sm space-y-2">
+                    <li><a href="#" class="hover:text-white">Order Tracking</a></li>
+                    <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4 uppercase text-xs tracking-widest text-amber-500">Newsletter</h4>
+                <p class="text-stone-400 text-xs mb-4">Get exclusive offers on impression perfumes Pakistan.</p>
+                <div class="flex">
+                    <input type="email" placeholder="Email" class="bg-stone-800 border-none p-2 w-full text-sm outline-none">
+                    <button class="bg-amber-600 px-4 py-2 text-sm hover:bg-amber-700 transition"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="pt-8 text-center text-xs text-stone-500">
+            &copy; 2026 Scents of Arabia. Handcrafted in Pakistan.
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FOR ROUTING & LOGIC -->
+    <script>
+        const products = [
+            { id: 1, name: "Midnight Oud", type: "Men", price: 2450, inspired: "Sauvage Elixir", notes: "Grapefruit, Cinnamon, Nutmeg, Cardamom", lasting: "12+ Hours", img: "https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=600&auto=format&fit=crop" },
+            { id: 2, name: "Velvet Rose", type: "Women", price: 2150, inspired: "Baccarat Rouge 540", notes: "Saffron, Jasmine, Amberwood, Ambergris", lasting: "10+ Hours", img: "https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=600&auto=format&fit=crop" },
+            { id: 3, name: "Sea Breeze", type: "Unisex", price: 1950, inspired: "Acqua di Gio", notes: "Sea Notes, Lime, Lemon, Jasmine", lasting: "8+ Hours", img: "https://images.unsplash.com/photo-1523293182086-7651a899d37f?q=80&w=600&auto=format&fit=crop" },
+            { id: 4, name: "Golden Sultan", type: "Men", price: 2600, inspired: "Aventus", notes: "Pineapple, Birch, Musk, Blackcurrant", lasting: "14+ Hours", img: "https://images.unsplash.com/photo-1583468323330-9032ad490fed?q=80&w=600&auto=format&fit=crop" },
+            { id: 5, name: "Floral Whisper", type: "Women", price: 1800, inspired: "Miss Dior", notes: "Peony, Rose, Apricot, Peach", lasting: "8+ Hours", img: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?q=80&w=600&auto=format&fit=crop" },
+            { id: 6, name: "Dark Desire", type: "Men", price: 2300, inspired: "Tobacco Vanille", notes: "Tobacco Leaf, Spices, Vanilla, Cacao", lasting: "12+ Hours", img: "https://images.unsplash.com/photo-1512781476588-f1efd9e48dec?q=80&w=600&auto=format&fit=crop" },
+            { id: 7, name: "Emerald Mist", type: "Unisex", price: 2000, inspired: "Silver Mountain Water", notes: "Bergamot, Mandarin Orange, Green Tea", lasting: "10+ Hours", img: "https://images.unsplash.com/photo-1557170334-a7c3a4f22038?q=80&w=600&auto=format&fit=crop" },
+            { id: 8, name: "Pure Vanilla", type: "Women", price: 1750, inspired: "Vanilla 28", notes: "Brown Sugar, Orchid, Tonka Bean", lasting: "9+ Hours", img: "https://images.unsplash.com/photo-1615484477778-ca3b77942c25?q=80&w=600&auto=format&fit=crop" }
+        ];
+
+        function route(page, params = null) {
+            const root = document.getElementById('app-root');
+            window.scrollTo(0, 0);
+            
+            // Update nav styles
+            document.querySelectorAll('nav a').forEach(a => a.classList.remove('active-link'));
+            const activeNav = document.getElementById(`nav-${page}`);
+            if (activeNav) activeNav.classList.add('active-link');
+
+            switch(page) {
+                case 'home':
+                    root.innerHTML = renderHome();
+                    break;
+                case 'shop':
+                    root.innerHTML = renderShop();
+                    break;
+                case 'product':
+                    root.innerHTML = renderProductDetail(params);
+                    break;
+                case 'about':
+                    root.innerHTML = renderAbout();
+                    break;
+                case 'faq':
+                    root.innerHTML = renderFAQ();
+                    break;
+                case 'contact':
+                    root.innerHTML = renderContact();
+                    break;
+                default:
+                    root.innerHTML = renderHome();
+            }
+        }
+
+        // --- RENDERERS ---
+
+        function renderHome() {
+            return `
+                <section class="relative h-[85vh] flex items-center justify-center text-white overflow-hidden fade-in">
+                    <!-- High Res Hero Background -->
+                    <img src="https://images.unsplash.com/photo-1547496613-4e193f03848b?q=80&w=1920&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover brightness-[0.3]" alt="Premium Perfume Bottle background">
+                    <div class="relative text-center z-10 px-6 max-w-3xl">
+                        <h1 class="text-5xl md:text-7xl mb-6 leading-tight">Redefining Elegance in Pakistan</h1>
+                        <p class="text-lg md:text-xl mb-10 font-light opacity-90 leading-relaxed">Experience premium <strong>impression perfumes Pakistan</strong>. Our fragrances are crafted to be the <strong>best perfumes in Pakistan</strong>, combining luxury scents with unbeatable longevity.</p>
+                        <div class="flex flex-col md:flex-row gap-4 justify-center">
+                            <button onclick="route('shop')" class="btn-gold px-10 py-4 font-semibold tracking-widest text-sm uppercase">Shop Collection</button>
+                            <button onclick="window.open('https://wa.me/923000000000')" class="bg-white/10 backdrop-blur-md border border-white/30 px-10 py-4 font-semibold tracking-widest text-sm uppercase hover:bg-white/20 transition">Order via WhatsApp</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="py-20 px-6 md:px-12 bg-white">
+                    <div class="max-w-7xl mx-auto">
+                        <div class="flex flex-col md:flex-row justify-between items-center md:items-end mb-12 gap-6">
+                            <div class="text-center md:text-left">
+                                <h2 class="text-4xl mb-2">Our Signature Collection</h2>
+                                <p class="text-stone-500 italic">Discover the <strong>long lasting perfumes for men</strong> and women.</p>
+                            </div>
+                            <button onclick="route('shop')" class="text-amber-600 font-semibold border-b-2 border-amber-600 pb-1 uppercase text-xs tracking-widest hover:text-amber-700 transition">View All Products</button>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-10">
+                            ${products.slice(0, 4).map(p => renderCard(p)).join('')}
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-stone-50 py-20 px-6 md:px-12">
+                    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-16">
+                        <div class="md:w-1/2">
+                            <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=800&auto=format&fit=crop" class="rounded-sm shadow-2xl" alt="Scentsof Arabia manufacturing">
+                        </div>
+                        <div class="md:w-1/2">
+                            <h2 class="text-4xl mb-6">Why We Are the #1 Choice for <strong>Impression Perfumes Pakistan</strong></h2>
+                            <p class="text-stone-600 mb-6 leading-relaxed">Most people believe that quality comes with a heavy price tag. We've spent years perfecting our formulations to offer <strong>long lasting perfumes for women</strong> and men that rival international giants at 1/10th the price.</p>
+                            <ul class="space-y-4 text-sm font-medium">
+                                <li><i class="fa-solid fa-check text-amber-600 mr-3"></i> 30% Oil Concentration (Extrait de Parfum)</li>
+                                <li><i class="fa-solid fa-check text-amber-600 mr-3"></i> Guaranteed 12+ Hours Lasting on Fabrics</li>
+                                <li><i class="fa-solid fa-check text-amber-600 mr-3"></i> 7-Day Money Back Guarantee</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            `;
+        }
+
+        function renderShop() {
+            return `
+                <div class="py-12 px-6 md:px-12 max-w-7xl mx-auto fade-in">
+                    <div class="text-center mb-16">
+                        <h1 class="text-5xl mb-4">Shop All Fragrances</h1>
+                        <p class="text-stone-500">Explore our diverse range of <strong>best perfumes in Pakistan</strong>.</p>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
+                        ${products.map(p => renderCard(p)).join('')}
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderCard(p) {
+            return `
+                <div class="product-card transition-soft cursor-pointer group" onclick="route('product', ${p.id})">
+                    <div class="relative overflow-hidden bg-gray-100 mb-4 h-64 md:h-80">
+                        <img src="${p.img}" alt="${p.name} - ${p.inspired}" class="w-full h-full object-cover transition-soft" loading="lazy">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-soft flex items-center justify-center opacity-0 group-hover:opacity-100">
+                             <button class="bg-white text-black px-4 py-2 text-[10px] uppercase tracking-widest font-bold shadow-lg">Quick View</button>
+                        </div>
+                    </div>
+                    <p class="text-[10px] uppercase text-amber-600 tracking-widest mb-1 font-bold">${p.type} Fragrance</p>
+                    <h3 class="text-lg mb-1">${p.name}</h3>
+                    <p class="text-xs text-stone-500 mb-2 font-light italic">Inspired by ${p.inspired}</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-stone-800">Rs. ${p.price.toLocaleString()}</span>
+                        <div class="flex text-[10px] text-amber-400">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderProductDetail(id) {
+            const p = products.find(x => x.id === id);
+            return `
+                <div class="py-12 px-6 md:px-12 max-w-7xl mx-auto fade-in">
+                    <div class="flex flex-col md:flex-row gap-16">
+                        <div class="md:w-1/2">
+                            <img src="${p.img}" alt="${p.name} detail view" class="w-full h-auto rounded-sm shadow-xl">
+                        </div>
+                        <div class="md:w-1/2">
+                            <nav class="text-[10px] uppercase text-stone-400 mb-4 flex space-x-2">
+                                <a href="#" onclick="route('home')" class="hover:text-amber-600 transition">Home</a> <span>/</span>
+                                <a href="#" onclick="route('shop')" class="hover:text-amber-600 transition">Shop</a> <span>/</span>
+                                <span class="text-stone-900">${p.name}</span>
+                            </nav>
+                            <h1 class="text-5xl mb-2 leading-tight">${p.name}</h1>
+                            <p class="text-amber-600 text-lg mb-6 tracking-wide uppercase font-semibold text-sm">Impression of <strong>${p.inspired}</strong></p>
+                            <p class="text-3xl font-bold text-stone-900 mb-8">Rs. ${p.price.toLocaleString()}</p>
+                            
+                            <div class="mb-8 p-6 bg-stone-50 border-l-4 border-amber-600">
+                                <h4 class="text-xs uppercase font-bold tracking-widest mb-2 text-stone-900">Scent Profile</h4>
+                                <p class="text-sm text-stone-600">${p.notes}</p>
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-4 mb-10">
+                                <div class="border border-stone-200 p-4 text-center">
+                                    <span class="block text-[10px] uppercase text-stone-400 mb-1">Longevity</span>
+                                    <span class="font-bold">${p.lasting}</span>
+                                </div>
+                                <div class="border border-stone-200 p-4 text-center">
+                                    <span class="block text-[10px] uppercase text-stone-400 mb-1">Concentration</span>
+                                    <span class="font-bold">Extrait de Parfum</span>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4 mb-10">
+                                <button onclick="alert('Added to cart')" class="btn-gold flex-1 py-4 font-bold uppercase tracking-widest text-sm shadow-lg">Add to Bag</button>
+                                <button onclick="window.open('https://wa.me/923000000000?text=Hi, I want to order ${p.name}')" class="bg-emerald-500 text-white px-6 py-4 transition hover:bg-emerald-600 rounded-sm shadow-lg"><i class="fa-brands fa-whatsapp text-xl"></i></button>
+                            </div>
+
+                            <div class="border-t border-stone-100 pt-6">
+                                <h4 class="text-xs uppercase font-bold tracking-widest mb-4">Customer Trust</h4>
+                                <div class="flex space-x-8">
+                                    <div class="text-center"><i class="fa-solid fa-truck-fast text-amber-600 mb-2"></i><p class="text-[10px] uppercase font-bold">Fast Delivery</p></div>
+                                    <div class="text-center"><i class="fa-solid fa-shield-heart text-amber-600 mb-2"></i><p class="text-[10px] uppercase font-bold">Skin Safe</p></div>
+                                    <div class="text-center"><i class="fa-solid fa-rotate-left text-amber-600 mb-2"></i><p class="text-[10px] uppercase font-bold">Money Back</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderAbout() {
+            return `
+                <div class="py-20 px-6 md:px-12 max-w-4xl mx-auto text-center fade-in">
+                    <h1 class="text-6xl mb-10">Our Scent Story</h1>
+                    <div class="prose prose-stone mx-auto text-left leading-loose text-stone-600">
+                        <p class="mb-6 italic text-xl text-stone-400 text-center font-light">"Luxury should be accessible, not exclusive."</p>
+                        <p class="mb-6">Founded in the heart of Lahore, Scents of Arabia was born out of a simple frustration: luxury fragrances were becoming inaccessible to the average Pakistani. We set out to change that by mastering the art of the "Impression."</p>
+                        <p class="mb-6">Our mission is to provide the <strong>best perfumes in Pakistan</strong> without the inflated marketing costs of international brands. We source our perfume oils directly from France and Switzerland, ensuring that every bottle of our <strong>long lasting perfumes for men</strong> and women delivers a consistent, high-projection experience.</p>
+                        <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=1200&auto=format&fit=crop" class="rounded-sm mb-10 w-full shadow-lg" alt="Our manufacturing process">
+                        <p>We aren't just selling a bottle; we're selling a memory, a mood, and a statement of confidence. Thank you for making us one of the fastest-growing brands for <strong>impression perfumes Pakistan</strong>.</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderFAQ() {
+            const faqs = [
+                { q: "Are these original perfumes?", a: "These are high-quality 'impressions' or 'inspired versions' of designer scents. We use similar high-end ingredients to provide an identical experience at a fraction of the cost." },
+                { q: "How long do the scents last?", a: "Our perfumes are classified as Extrait de Parfum (30% concentration). They typically last 8-12 hours on skin and over 24 hours on clothes, making them the <strong>best long lasting perfumes in Pakistan</strong>." },
+                { q: "What is your return policy?", a: "We offer a 7-day no-questions-asked money-back guarantee. If you don't like the scent, just send it back for a full refund." }
+            ];
+            return `
+                <div class="py-20 px-6 md:px-12 max-w-3xl mx-auto fade-in" itemscope itemtype="https://schema.org/FAQPage">
+                    <h1 class="text-5xl text-center mb-16">Common Questions</h1>
+                    <div class="space-y-6">
+                        ${faqs.map(f => `
+                            <div class="border-b border-stone-200 pb-6" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <h3 class="text-xl mb-3 font-semibold" itemprop="name">${f.q}</h3>
+                                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                    <div class="text-stone-500 leading-relaxed" itemprop="text">${f.a}</div>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderContact() {
+            return `
+                <div class="py-20 px-6 md:px-12 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 fade-in">
+                    <div>
+                        <h1 class="text-5xl mb-8 leading-tight">Get In Touch</h1>
+                        <p class="text-stone-500 mb-10 leading-relaxed text-lg">Need help picking your signature scent? Our fragrance experts are here to help you find the best <strong>impression perfumes Pakistan</strong> has to offer.</p>
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-amber-100 flex items-center justify-center text-amber-600 rounded-full shadow-sm"><i class="fa-solid fa-phone"></i></div>
+                                <div><p class="text-[10px] uppercase text-stone-400 tracking-widest font-bold">Call Us</p><p class="font-bold text-stone-800">+92 300 1234567</p></div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-amber-100 flex items-center justify-center text-amber-600 rounded-full shadow-sm"><i class="fa-solid fa-envelope"></i></div>
+                                <div><p class="text-[10px] uppercase text-stone-400 tracking-widest font-bold">Email Us</p><p class="font-bold text-stone-800">hello@scentsofarabia.pk</p></div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-amber-100 flex items-center justify-center text-amber-600 rounded-full shadow-sm"><i class="fa-solid fa-location-dot"></i></div>
+                                <div><p class="text-[10px] uppercase text-stone-400 tracking-widest font-bold">Visit Studio</p><p class="font-bold text-stone-800">DHA Phase 6, Lahore, PK</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-10 shadow-2xl rounded-sm border border-stone-50">
+                        <form onsubmit="event.preventDefault(); alert('Message sent successfully!')">
+                            <div class="mb-6">
+                                <label class="text-[10px] uppercase font-bold mb-2 block text-stone-400 tracking-widest">Your Name</label>
+                                <input type="text" class="w-full border-b border-stone-300 py-2 focus:border-amber-600 outline-none transition bg-transparent" required>
+                            </div>
+                            <div class="mb-6">
+                                <label class="text-[10px] uppercase font-bold mb-2 block text-stone-400 tracking-widest">Email Address</label>
+                                <input type="email" class="w-full border-b border-stone-300 py-2 focus:border-amber-600 outline-none transition bg-transparent" required>
+                            </div>
+                            <div class="mb-8">
+                                <label class="text-[10px] uppercase font-bold mb-2 block text-stone-400 tracking-widest">Message</label>
+                                <textarea rows="4" class="w-full border-b border-stone-300 py-2 focus:border-amber-600 outline-none transition bg-transparent resize-none" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-gold w-full py-4 uppercase tracking-widest font-bold shadow-lg">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            `;
+        }
+
+        // --- UTILS ---
+        function toggleMobileMenu() {
+            const menu = document.querySelector('.md\\:flex');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex-col');
+            menu.classList.toggle('absolute');
+            menu.classList.toggle('top-20');
+            menu.classList.toggle('left-0');
+            menu.classList.toggle('w-full');
+            menu.classList.toggle('bg-white');
+            menu.classList.toggle('p-6');
+            menu.classList.toggle('shadow-xl');
+        }
+
+        // Init Home
+        window.onload = () => route('home');
+    </script>
+</body>
+</html>
